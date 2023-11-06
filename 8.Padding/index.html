@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+<style>
+    div{
+        border:1px solid blue;
+        background-color: aqua;
+        /* padding-top:50px;
+        padding-left: 80px;
+        padding-right: 30px;
+        padding-bottom: 90px;   */
+        padding : 50px;      
+        height: 500px;   /*yükseklik*/
+        width: 400px;  /*genişlik*/
+        margin: auto;
+        box-sizing: border-box;    /*bir etiketin toplam genişliğine ve yüksekliğine padding ve border'ı dahil etmemizi sağlar. Box-sizing değeri olarak border-box değeri atarsak ; bir etikette, padding ve border genişlik ve yüksekliğe dahil edilir. Box-sizing özelliğini tüm etiketlerde kullanmak her zaman avantajlı olacaktır..*/
+    }       /*box sizing olmadığında yazı alanı 400x500(daha büyük) oluyor.Ancak boz sziing eklersek padding değerleri toplamı 400x500(yazı alanı) oluyor .*/
+    h3{
+        border:1px solid blue;
+        background-color: aqua;
+        padding:10px 0 100px 100px;  /*üst,sağ,alt,sol(bu sıra üstten başlıyor saat yönünde ilerliyor.)*/
+    }
+    h4{
+        border:1px solid blue;
+        background-color: aqua;
+        padding:10px 100 ;    /*ilk değer(alt,üst), ikinci değer(sol,sağ).Tek değer vermiş olsaydım dört kenardan da aynı pixel değerini vermiş olurdum.*/  
+    }
+</style>
+
+</head>
+<body>
+    
+<h2>Padding Kullanımı</h2>   <!--padding ile border ve yazı arasına boşluk koyabiliriz.-->
+  
+<h3>h3 etiketim</h3>
+
+<h4>h4 etiketim</h4>
+
+<div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus dolor officia dolores tempore sapiente laboriosam quos quae recusandae perspiciatis possimus, nemo nisi esse optio doloribus, assumenda deserunt deleniti explicabo ducimus.</div>
+
+
+</body>
+</html>

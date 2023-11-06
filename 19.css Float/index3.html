@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+
+     *{
+        box-sizing: border-box;   /*her ekleme işleminde genişliğin değişmesini istemediğimizden ekledi bu satırı..tüm etiketler  için geçerlidir.widht değerini girdikten sonra üstüne border değeride eklenmez sabit kalır:*/
+     }                           
+
+
+      .box{
+        float: left;      /*divleri (sola doğru)yan yana getirdik.*/
+        width: 33.33%;      /*sayfanın üçte birini bir tanesi kaplasın.*/
+        border:1px solid red ;      /*border daki 1 pixel eklendi dolayııstyla bir tane kutu aşağı inmiş oldu.*/
+        padding: 50px;
+        text-align: center;
+    }
+       .can{
+        margin-bottom: 30px;  
+        overflow: auto; /* "clear" işlemini gerçekleştirmek için gerekli */
+        
+       }
+       .can::after{          /*clear yöntemi yapıyoruz.*/
+         content: "";
+         clear: both;
+         display: table;
+       }
+       
+    </style>
+    
+</head>
+<body>
+
+    <h2>Eşit kutular</h2>
+    <br>
+
+<div class="can">
+    <div class="box" style="background-color: silver;">
+        <p>Yazı</p>
+    </div>
+    <div class="box" style="background-color: silver;">
+        <p>Yazı</p>
+    </div>
+    <div  class="box"style="background-color: silver;">
+        <p>Yazı</p>
+    </div>
+
+    
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint consequatur molestiae impedit in ab. Debitis voluptatem, assumenda, praesentium odio porro molestiae quibusdam, tempora saepe soluta corporis dolorem velit dolorum. Velit voluptatibus accusantium, voluptates ducimus facilis culpa molestiae quod rerum unde numquam? Consequuntur minus assumenda eum nisi quasi numquam aliquam, eveniet voluptatibus maiores magni consectetur architecto autem perferendis officiis rerum cumque eligendi. Earum officia saepe, repudiandae molestias voluptate autem sapiente? Voluptates quibusdam at nobis? Reiciendis deleniti asperiores quis dolore laborum eos ullam voluptatum! Doloremque consequatur consectetur illum. Dicta, incidunt dignissimos. Amet neque ratione quasi, saepe error molestias aliquam molestiae rerum optio?</p>
+</div>
+    
+</body>
+</html>

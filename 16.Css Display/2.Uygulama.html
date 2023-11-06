@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <style>
+
+p,#can{
+  
+    font-size: 20px;
+    margin: auto;     /* sağdan soldan ortalarız*/
+    background-color: aqua;
+    border:1px solid red;
+    padding:15px;
+    text-align: center;
+
+}
+#can{
+    display: none;
+}
+
+    </style>
+
+
+</head>
+<body>
+
+<p onclick="goster()">Paneli Göster</p>
+<div id="can">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores neque, quas minima expedita harum atque sapiente sunt dolorem praesentium qui. Quam exercitationem officia itaque quae laboriosam et quod consequuntur blanditiis rerum magnam ipsum, earum, sequi enim eveniet amet repellat nihil voluptatibus culpa eaque! Aliquid sint deserunt quibusdam maiores magnam corrupti suscipit inventore ut dignissimos harum nihil molestias ullam iusto atque, quisquam necessitatibus nesciunt explicabo consectetur consequuntur non et corporis! Minus laborum tempora commodi dicta odio, omnis, labore sint iusto blanditiis doloribus, officiis autem nemo. Cupiditate ipsam exercitationem quod sint deleniti repudiandae voluptates possimus quis distinctio ad animi fuga placeat, beatae iusto. Eius vero facilis quasi, maiores beatae sequi laudantium ad esse optio sit eos veritatis quae et, cumque ullam exercitationem dolor odio ducimus officia blanditiis recusandae iure? Odit aliquid exercitationem totam sequi necessitatibus quis sapiente ex nam fugit unde facere, iusto dicta quae quasi deleniti aut accusamus molestiae impedit vero.</div>
+    
+
+<script>
+    function goster(){
+        document.getElementById("can").style.display="block";   /*p etiketine tıkladığımızda lorem yani paragraf açılacak.*/
+    }
+</script>
+</body>
+</html>

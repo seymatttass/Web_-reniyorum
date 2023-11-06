@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+<style>
+div.static{
+    position: static;    /*kendisi poszisyon verir.relative yapsaydık kendimiz boşluklarını verebilirdik.*/
+    border:2px solid red;
+    left:30px;    /*bu satır etki etmez static old için relative olsaydı bu satır çalışırdı.*/
+ 
+ /*position değerini fixed yapar isek sayfada bir yere sabitlemiş oluruz,yazıyı sola sağa vb yaslama.*/
+  
+}
+div.relative{
+    position: relative;
+    border:2px solid red;
+    bottom:0px;
+    right:0px;
+    width: 500px;
+    height: 200px;
+}
+div.absolute{
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    border:3px solid blue;
+    top: 80px;
+    right: 0;
+
+}
+
+div.can{
+    position: -webkit-sticky;
+    border: 2px solid blue;
+    background-color: aquamarine;
+    padding: 5px;
+    top: 10px;    /*10 pixelden sonra sabit kalır.*/
+}
+img{
+    position:absolute;    /*body e göre konumlandıtrma yapar absolute.*/
+    top:0px;
+    left:0px;
+    z-index: -1;        /*alt katmana aldık.yazılar resmin üzerinden gözükebilir.*/
+    
+}
+
+</style>
+
+</head>
+<body>
+    
+<h2>Position Static</h2>
+
+<div class="static">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam perferendis nam ea mollitia accusantium, laborum quo assumenda totam. Obcaecati temporibus cumque reprehenderit modi amet rerum impedit porro possimus nemo sit ipsum maxime pariatur itaque accusamus, libero saepe officia a. Atque exercitationem nisi culpa nemo deleniti possimus numquam consequuntur eaque recusandae beatae! Eum et nihil magni aliquid saepe magnam suscipit laborum repellat inventore natus, culpa cum, similique qui, amet consectetur! Natus culpa impedit enim quia, tempore ducimus mollitia suscipit id, dolor consequuntur reprehenderit ab sint facere, inventore cumque eligendi vero. Soluta illo tempore facere illum. Voluptate dolore aut repellendus hic minima perferendis saepe harum omnis placeat voluptatum odio accusantium magnam officiis quia, amet dolor corrupti voluptas dignissimos tempora consectetur ut iste quis maxime. Accusamus, eveniet, architecto reiciendis voluptatem aliquam labore error dignissimos quas, quo beatae et. Deleniti, aperiam perferendis labore maxime voluptatem rem a vitae quae fugiat nihil quam. Nihil, cumque.</div>
+
+<br>
+<br>
+
+<div class="relative">Relative   
+    <div class="absolute">
+        Absolute
+    </div>
+</div>
+<!--parent child ilişkisi.iki divin birbirine göre konumlanmasını istiyorsak üstte relatice içinde absolute olmalı. -->
+
+
+
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione maxime praesentium eligendi perferendis at!</p>
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde, aliquid temporibus! Accusamus blanditiis saepe doloribus!</p>
+<div class="can">Ben Stickyim</div> 
+<div style="padding-bottom: 200px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel dolore inventore earum, dicta culpa quo omnis pariatur quod vero aut, maxime, libero saepe?</div>
+
+<br>
+
+
+<h1>Can Boz</h1>
+<img src="jpg1.png">
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum vel autem praesentium voluptas velit commodi, culpa quo sequi itaque ipsam! Culpa, esse ut voluptatum voluptatem explicabo doloribus provident minima deserunt.</p>
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique assumenda quia neque omnis repudiandae recusandae suscipit sunt magnam eveniet est! Sint, numquam tempora tenetur ex voluptates sit cum consequuntur ad.</p>
+
+</body>
+</html>

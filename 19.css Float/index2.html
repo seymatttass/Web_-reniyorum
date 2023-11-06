@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+<style>
+
+     .div1{
+         width: 700px;
+         
+         
+         border: 2px solid red;
+         float: right;
+         margin: 10px;
+         overflow: auto;  /*hem resmi hem yazıyı sığdırmaya çalışır.*/
+         
+     }
+     .div1::after{        /*bundan sonra gelecekleri belirtiyor.*/
+         content: "";       /*bu etiketi sığdırmak için yazılmış bir koddur.*/
+         clear: both;
+         display: table;
+
+     }
+     .class1{
+        float: left;
+     }
+
+     
+</style>
+
+
+</head>
+<body>
+
+
+<h2>Clear kullanılmadan</h2>
+<div class="div1">
+     <img src="jpg1.png" alt="" class="class1">
+     
+     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet voluptate deleniti rem molestias blanditiis debitis, ad laborum sapiente quos libero expedita accusantium sed quam possimus cupiditate vel iste necessitatibus est cumque impedit placeat! Suscipit ullam similique molestias tenetur quas reprehenderit quidem veniam harum aspernatur. Temporibus sunt sint delectus dolor cupiditate?
+
+</div>
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+p:only-of-type{    /*(p:only-child)ile aynıdır.p ye ait bir child olan durumu seçer.*/
+  background: red;
+}
+
+input:optional{      /*required olmayan için css özelliği vermiş olduk.*/
+    background-color: yellow;
+}
+input:required{       /*required için css özelliği vermiş olduk.*/
+    background-color: hotpink;
+   
+}
+
+input:out-of-range{     /*input valuesi max ve min arasında değilse bu şekilde css veriririz.*/
+    border: 1px solid red;
+    display: block; 
+ 
+}
+
+input:read-only{
+    background-color: y;
+}
+/* input:read-write{          /*readonly olmayanları etkiler.
+    background-color: aqua;
+}
+*/
+
+
+:root{
+    background-color: red;   /*tüm html etiketlerine verir bu rengi.diğer verdiklerimde geçerli olmadı çünkü onları kendimiz ayarlamıştık.*/
+}
+    </style>
+
+</head>
+<body>
+    
+
+<div><p>Can</p></div>
+<div><p>Can</p><p>Boz</p></div>      <!--2 childi var 2 p etiketi var.-->
+
+<br><br>
+
+Ad<input type="text"> <br>    <!--optional dır (required olmayan)-->
+Soyad<input type="text" required>     <!--required yazdığımızda girilmesi zorunlu alandır girilmezse hata verecektir.-->
+
+
+<input type="number" min="5" max="15" value="20" >   <br>
+<!--value min max arasında olsaydı input:in-range ile css veririz.ama iki değer arasında değilse input:out-of-range ile veririz. -->
+
+
+<input type="text" readonly value="Can"> <br> <br>  <!--sadece okunabilir modunda yazamayız.-->
+<input type="text" value="Can Boz">    <!--input:optional{} rengi burdan geliyor.-->
+
+
+</body>
+</html>

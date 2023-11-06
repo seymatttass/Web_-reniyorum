@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+    <style>
+        .can1{
+            height: 600px;
+            width: 50%;   /*sayfanın yarısını kaplamasını sağladık.*/
+            background-color: aquamarine;
+        }
+        h1{
+            height: auto;    /*iki değere de auto vererek taşmayı önleyebiliriz.*/
+            width: auto;  
+            background-color: aquamarine;
+        }
+        #parent{
+             height: 100px;
+             width: 250px ;
+             border: 3px solid blue;
+        }
+        #child{
+            height: 50%;    /*kapladığı div etiketinin yarısnı kapla demektir.*/
+            width: 40%;     /*kapladığı div etiketininyüzde 40 ını kapla demektir.*/
+            border: 2px solid red;
+
+        }
+        .can2{
+             max-height:50px ;   /*satır yüksekliği 50 pixel i geçemez geçerse kaydırma ekler.*/
+            overflow:auto;      /*tşatığında auto  yaparız aşağı kaydırma eklenmiş olur.*/
+        }
+        .can3{
+            max-width:50px ;     /*satır genişliği 50 pixeli geçemeyecek kadar ayarlanır.Min değerler de vardır.*/
+            overflow:auto;      
+        }
+    </style> 
+</head>
+<body>
+    
+<h1>Taşma önleme</h1> 
+
+<div class="can1">
+ <h2>Css Eğitimi</h2>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda repellendus, totam iusto quod nam ab.</p>
+</div>
+
+<div id="parent">  <!--parent dan başka bir şey de verilebilir.-->
+    <div id="child">
+        Css Eğitimi müthiş gidiyor.
+    </div> 
+</div>
+
+
+<h1>Max Hight ve width değerleri</h1>
+
+ <p class="can2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris erat ipsum, pretium ut diam consequat, gravida molestie ex. Quisque volutpat tincidunt dolor, vitae pellentesque tellus ultrices nec. Morbi euismod nisi tristique viverra scelerisque. Vestibulum iaculis vel enim at condimentum. Mauris augue lorem, tristique id felis quis, aliquam condimentum arcu. Proin posuere varius leo sed imperdiet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce sapien nulla, lacinia quis magna ac, pharetra blandit tellus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris erat ipsum, pretium ut diam consequat, gravida molestie ex. Quisque volutpat tincidunt dolor, vitae pellentesque tellus ultrices nec. Morbi euismod nisi tristique viverra scelerisque. Vestibulum iaculis vel enim at condimentum. Mauris augue lorem, tristique id felis quis, aliquam condimentum arcu. Proin posuere varius leo sed imperdiet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce sapien nulla, lacinia quis magna ac, pharetra blandit tellus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris erat ipsum, pretium ut diam consequat, gravida molestie ex. Quisque volutpat tincidunt dolor, vitae pellentesque tellus ultrices nec. Morbi euismod nisi tristique viverra scelerisque. Vestibulum iaculis vel enim at condimentum. Mauris augue lorem, tristique id felis quis, aliquam condimentum arcu. Proin posuere varius leo sed imperdiet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce sapien nulla, lacinia quis magna ac, pharetra blandit tellus. Nullam bibendum ligula tincidunt orci dapibus facilisis Nullam bibendum ligula tincidunt orci dapibus facilisis Nullam bibendum ligula tincidunt orci dapibus facilisis.</p>
+
+ <p class="can3">Quisque sapien neque, porttitor sit amet pulvinar quis, bibendum in sapien.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris erat ipsum, pretium ut diam consequat, gravida molestie ex. Quisque volutpat tincidunt dolor, vitae pellentesque tellus ultrices nec. Morbi euismod nisi tristique viverra scelerisque. Vestibulum iaculis vel enim at condimentum. Mauris augue lorem, tristique id felis quis, aliquam condimentum arcu. Proin posuere varius leo sed imperdiet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce sapien nulla, lacinia quis magna ac, pharetra blandit tellus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris erat ipsum, pretium ut diam consequat, gravida molestie ex. Quisque volutpat tincidunt dolor, vitae pellentesque tellus ultrices nec. Morbi euismod nisi tristique viverra scelerisque. Vestibulum iaculis vel enim at condimentum. Mauris augue lorem, tristique id felis quis, aliquam condimentum arcu. Proin posuere varius leo sed imperdiet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce sapien nulla, lacinia quis magna ac, pharetra blandit tellus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris erat ipsum, pretium ut diam consequat, gravida molestie ex. Quisque volutpat tincidunt dolor, vitae pellentesque tellus ultrices nec. Morbi euismod nisi tristique viverra scelerisque. Vestibulum iaculis vel enim at condimentum. Mauris augue lorem, tristique id felis quis, aliquam condimentum arcu. Proin posuere varius leo sed imperdiet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce sapien nulla, lacinia quis magna ac, pharetra blandit tellus. Nullam bibendum ligula tincidunt orci dapibus facilisis Nullam bibendum ligula tincidunt orci dapibus facilisis Nullam bibendum ligula tincidunt orci dapibus facilisis. In suscipit, leo at posuere lacinia, diam ante mollis tellus, eget ultricies turpis odio vitae erat. Proin sit amet purus sed quam ullamcorper finibus eget et velit. Fusce scelerisque enim erat, ac condimentum risus commodo at. Curabitur hendrerit risus eu justo finibus, eu laoreet leo volutpat. Donec mollis suscipit enim, sed venenatis risus. Integer consequat mattis eleifend.</p>
+
+
+
+
+
+
+
+
+</body>
+</html>

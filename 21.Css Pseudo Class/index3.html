@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+
+/*  p:first-child{     ilk kullanılan p html etiketi demektir.
+    color:red;
+}
+ */
+
+
+/*  p i:first-child{     p etiketinin ilk i etiketi demektir.
+    color:red;
+}
+*/
+
+p:first-child i{     /*p nin ilk çocuğunun i leri demektir.*/
+    color:red;
+}
+
+q:lang(no){         /*fatklı dillerde birşey,kurallar belirtmek istersek lang pseudo classını kullanabiliriz.*/
+       quotes: "/" "/" ;
+
+}
+
+    </style>
+
+
+</head>
+<body>
+    
+<p>Can Boz <i>Osman</i> <i>Osman</i> <i>Osman</i></p>
+<p>Can Boz <i>Osman</i> <i>Osman</i> <i>Osman</i></p>
+<p>Can Boz <i>Osman</i> <i>Osman</i> <i>Osman</i></p>
+
+
+<p>Can Boz <q lang="no">françis</q>  anglais</p>
+
+</body>
+</html>

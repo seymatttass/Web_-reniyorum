@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Stylelleri</title>
+
+    <style>
+        p.dotted{
+            border-style: dotted;
+            border-width: thick; 
+            /*thin ince kalınlıkta
+            medium orta kalınlıkta kenarlık
+            thick çok kalın oluyor. */
+        }
+        p.dashed{
+            border-style: dashed;
+            border-width: 4px;
+        }
+        p.solid{
+            border-style: solid;
+            border-width: 10px 2px 5px 3px; /*sol üst sağ alt kalınlıkları pixel ile verdik.*/
+        }
+        p.double{
+            border-style: double;
+        }
+        p.groove{
+            border-style: groove;
+        }
+        p.ridge{
+            border-style: ridge;
+        }
+        p.inset{
+            border-style: inset;
+        }
+        p.outset{
+            border-style: outset;
+        }
+        p.none{
+            border-style: none;
+        }
+        p.hidden{
+            border-style: hidden;
+        }
+        p.mix{  /* Karışık şeklilde soldan sağa veriyor dört tane seçtiğimizde*/
+            border-style:dotted dashed solid double ;
+        }
+        .can{
+            border-top-style: dotted;  /*farklı border stilleri verrdik borderın dört bir yanına ayrı olarak.*/
+            border-right: solid;
+            border-bottom: dashed;
+            border-left-style: inset;
+        }
+        .canan{
+            border:5px dotted red;  /*tek bir satırda tüm borderı tanımlayabiliriz,ayarlayabiliriz.*/
+        }
+        .kitap{
+            border-left:7px solid blue;
+            /*border top : sadece üst tarafa border verir.
+            border-left: sadece sol tarafa border verir.
+            border-right : sadece sağ tarafa border verir.
+            border-bottom: sadece alt tarafa border verir.*/
+        }
+        .kitabım{
+            border:5px solid blue;
+            border-radius: 12px ;
+            /*border-radius : borderın kenarlarını ovalleştirir,yuvarlaklaştırır.*/
+        }
+    </style>
+</head>
+<body>  
+    
+<h1>Border Stylleri</h1>
+
+<p class="dotted">Dotted Border</p>
+<p class="dashed">Dashed Border</p>
+<p class="solid">Solid Border</p>
+<p class="double">Double Border</p>
+<p class="groove">Groove Border</p>
+<p class="ridge">Ridge Border</p>
+<p class="inset">Inset Border</p>
+<p class="outset">Outset Border</p>
+<p class="none">None Border</p>
+<p class="hidden">Hidden Border</p>
+<p class="mix">Mix Border</p>
+<p class="can">Farklı border stilleri</p>
+<p class="canan">Can Boz</p>
+<p class="kitap">Kitap</p>
+<p class="kitabım">Kitabım</p>
+
+
+
+</body>
+</html>

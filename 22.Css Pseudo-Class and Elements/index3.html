@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+
+    p:empty{     /*boş olan p etiketine bir class vereceğim de mektir.*/
+       width: 150px;
+       height: 50px;
+       background-color: red;
+    } /*bir class oluşturup yer ayırdık ama diğer etiketler bundan hiç etkilenmedi.Boş p etiketi için yaptık.*/
+    
+    /*  p:first-of-type{  p nin ailesinin yani body nin ilk çocuğu demektir.
+        width: 150px;
+       height: 50px;
+       background-color: red;
+    }
+     */
+    input:in-range{     /*input a css veriyoruz.*/
+        border: 1px solid red;
+        margin-right: 10px;
+    }
+    input:invalid{   /*eğer email formatına uymayan bir değer girilirse kırmızı border verecektir.*/
+       border: 1px solid red;
+    }
+
+
+
+
+
+    </style>
+
+</head>
+<body>
+    
+
+<p></p>
+<p>Can</p>
+<p>Can Boz</p>
+
+<input type="number" min="5" max="15" value="9">
+
+<input type="email"  value="canboz@hotmail.com">
+
+
+
+</body>
+</html>

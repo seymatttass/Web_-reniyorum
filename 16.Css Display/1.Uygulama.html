@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+<style>
+
+.imgbox{
+   float: left;     /*tüm resimleri yan yana koyduk.*/
+   border:1px solid grey;
+   margin:4px;
+   padding:6px;
+   width:150px;
+ 
+}
+button{
+    width: 100%;  /*olduğu yeri kaplasın.*/
+
+}
+
+
+
+
+</style>
+</head>   
+
+
+
+<body>
+    
+<div class="imgbox" id="imgbox1">Resim1 <br>
+        <img src="jpg1.png" style="width: 100%"   >
+        <button onclick="removeelement()">Kaldır.</button>
+</div>
+
+<div class="imgbox" id="imgbox2">Resim2 <br>
+    <img src="jpg2.jpeg" style="width: 100%"  >
+    <button onclick="changeVisibility()">Gizle.</button>
+</div>
+
+<div class="imgbox" id="imgbox3">Resim3 <br>
+    <img src="jpg3.png"  style="width: 100%"  >
+    <button onclick="resetelement()">Resetle.</button>
+</div>
+
+
+ <script>
+function removeelement(){
+    document.getElementById("imgbox1").style.display="none";  /*kaldıracaktır*/
+}
+
+function changeVisibility(){
+    document.getElementById("imgbox2").style.visibility="hidden";  /*gizledik.*/
+}
+
+function resetelement(){
+    document.getElementById("imgbox1").style.display="block" /*resetle.. bloc da inline da olsa fark etmez yukarda ezdik zaten (float:left) */
+    document.getElementById("imgbox2").style.visibility="visible";
+}
+
+
+ </script>
+
+
+</body>
+</html>

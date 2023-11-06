@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     
+    <style>
+        div{      /*margin ile boşluklar verebiliriz dört bir taraftan. */
+            border:1px solid black;
+            margin-top:100px;     /*üst*/
+            margin-left:50px;    
+            margin-right:50px;
+            margin-bottom: 50px;;    /*alt*/
+            background-color: aquamarine;
+        }
+        .can{
+               width:300px;
+               border:1px solid blue;
+               margin:auto;  /*yazı alanını sol ve sağdan ortalar.*/
+
+        }
+        p.can3{
+            border:1px solid green;
+            margin: 100px 50px 10px 50px ; 
+            background-color: hotpink;
+              /*tek bir satırda dört bir tarafından boşluk verebiliriz.(üst sağ alt sol)*/
+    }        /*iki değer girilseydi yukardan,aşpağıdan ikinci değerde sol ve sağ olacaktı.*/
+            /*tek bir değer verilirse dört bir yandan aynı pixel değer vermiş oluruz.*/
+            div{
+                border:1px solid blue;
+                margin-left:100px;
+            }
+            .can2{
+                margin-left:inherit;    /*can2 class isimli p etiketi içerisinde olduğğu div etiketinden kalıtım almıştır. */
+            }
+           
+            h1{
+                 margin:0 0 50px 0;
+            }                             /*margin değerleri h1 in alttan 50 h2nin üstten 20 bir çakışma vardır.Burada büyük değer neyse o olacaktır.Büyük balık küçük balığı yutar.*/
+            h2{                          
+                 margin:20px 0 0 0;
+            }
+    </style>
+</head> 
+<body>
+
+<h2>İnherit Kullanımı</h2>
+
+<div>
+    <p class="can2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas blanditiis dolorem, porro amet ipsam tempora doloribus?</p>
+</div>
+
+<p class="can3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo qui quia ipsam officia atque ex itaque magnam blanditiis nihil nesciunt, esse modi reprehenderit molestias optio sit ad fugiat reiciendis accusantium!</p>
+
+ <div class="can">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, molestias corrupti veniam ipsum, iusto, similique velit repellat ratione repudiandae quasi ipsam quas. Incidunt optio dicta officia, obcaecati consequuntur facere, ducimus, architecto nesciunt aspernatur quaerat odio itaque. Cupiditate, exercitationem? Iste nobis repudiandae officiis, corporis molestiae obcaecati.</div>
+
+
+ <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, molestias corrupti veniam ipsum, iusto, similique velit repellat ratione repudiandae quasi ipsam quas. Incidunt optio dicta officia, obcaecati consequuntur facere, ducimus, architecto nesciunt aspernatur quaerat odio itaque. Cupiditate, exercitationem? Iste nobis repudiandae officiis, corporis molestiae obcaecati.</div>
+
+<h1>Komple Web</h1>
+  
+<h2>Komple Web</h2>
+
+
+</body>
+</html>

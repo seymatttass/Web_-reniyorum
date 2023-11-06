@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Combinators(Seçiciler)</title>
+
+<style>
+    /*     SELECTOR    */
+ /* (div ~ p{}) dediğimizde div ile aynı seviyede olan p lere css veririz.yani paragraf4 ve paragraf 5 css alabilir. */   
+/* (div + p{}) dediğimizde divden sonraki ilk p kastedilir yani paragraf4 sadece o background rengini sarı alır.    */    
+/*   div >p{}  (div > p) yapsaydık sadece bir altındakinde çalışır.section altındaki çalışmaz */    
+div p{    /*divin içindeki tüm p etiketlerinde çalışır.sectionın altındaki p de yine divinde altındadır.*/
+    background-color: yellow;
+
+}
+
+
+</style>
+
+
+</head>
+<body>
+
+<div>
+    <p>Paragraf1</p>
+    <p>Paragraf2</p>
+   
+    <section> <p>Paragraf3</p></section>
+</div>
+
+     
+    <p>Paragraf4</p>    
+    <p>Paragraf5</p>
+
+</body>
+</html>

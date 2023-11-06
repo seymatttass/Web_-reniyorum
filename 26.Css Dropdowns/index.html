@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+<style>
+.can{
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content{
+    position: absolute;
+    display: none; 
+    background-color: aquamarine;
+    min-width: 200px;
+    box-shadow: 0px 10px 15px 0px rgba(0,0,0,0,2);   /*gölge vermek için.*/
+    padding: 15px 26px;
+    text-align: center;
+    font-size: 20px;     /*normalde 16 px*/
+ }  
+ .can:hover .dropdown-content{
+      display: block;
+ }
+</style>
+
+
+</head>
+<body>
+    
+<h1>Hoverable Dropdown</h1>
+
+<div class="can">
+    <span>Beni TIKLA</span>               
+    <div class="dropdown-content">        <!--position verirken içerdeki div e absolute dışardakine relative  veriyorduk.-->
+        <p>Can Boz</p>
+    </div> 
+
+</div>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+     /*    p::first-line{       (pseudo element)ilk sattıra css özelliği vermiş olduk.
+            color: red;
+     }
+    */
+
+
+     h1::first-letter{           /*ilk harfe css verdik.*/
+        font-size: xx-large;
+        color: red;
+     }
+     p.can::first-line{           /*pesudo elementi class ile oluşturduk.*/
+        color: blue;                 /*can classlı p etiketinin ilk satırına css verdik*/
+        font-variant: small-caps;
+     }
+     p.canan::after{            /*canan classlı p etiketinden sonra can boz u ekle(contenti)*/
+        content: "Can Boz";
+     }
+
+     p.canan::before{            /*canan classlı p etiketinden önce can boz u ekle(contenti)*/
+        content: "Can Boz";
+     }
+
+     ::selection{           /*(selection=seçilen bölge)fare ile seçtiğimizde gözükecek şeylerin css ini veriyoruz.*/
+        color: red;
+        background: yellow;
+     }
+    </style>
+
+</head>
+<body>
+    
+    <h1>Can Boz</h1>
+
+    <p class="can">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error inventore at consequatur, iusto corrupti, sed aspernatur neque, quo est eum eligendi quam! Iste quod reprehenderit voluptas cupiditate exercitationem aliquam eaque voluptatibus ipsum consequatur laboriosam, in quaerat dignissimos repudiandae adipisci magni similique cumque fugiat dolor, quibusdam, tenetur veniam? Eos, ad iste a id repellat adipisci laboriosam expedita optio qui? Inventore atque odit dolore corrupti dignissimos, soluta iste sit molestiae ipsam enim, illo autem deleniti quisquam a, dicta molestias. Eaque, molestiae. Quidem laborum nam officia amet quam sed odit eos aperiam quasi sequi explicabo accusamus recusandae neque repudiandae suscipit, cumque voluptates officiis?</p>
+
+    
+    <p class="canan">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, at sunt! Laboriosam, fugiat vitae? Doloribus error fugit a voluptas alias possimus minus culpa labore quos maxime, reiciendis ducimus, facilis aliquid amet minima neque officia. Reprehenderit ipsam aspernatur nobis incidunt hic illum eos? Quis animi delectus a aspernatur nostrum, magnam deleniti.</p>
+
+
+
+</body>
+</html>

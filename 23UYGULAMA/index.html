@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        *{
+          box-sizing: border-box;    /*paddingi genişlik ve yükseklik üzerine eklememeyi sağlar.nasıl ayarladıysak öylr olur h ve w*/
+        }
+         .topmenu {
+            list-style-type: none;     /*yuvarlak olmasın hiçbirşey olmasın textlerin yanında*/
+            margin: 0;
+            padding: 0;
+            background-color: grey;
+            overflow: auto;          /*siyah rengi verince sığmadı dığması için bu kod yazılır.*/
+         }
+        .topmenu li{
+            float: left;   /*yan yana aldık.*/
+         }
+        .topmenu li a{ 
+            display: inline-block;  /*yan yana sığdırmak için bu kodu yazdık.*/
+            color: white;
+            padding: 14px 15px;  
+            text-align: center; 
+            text-decoration: none; /*alttaki çizgiler gitti.*/
+
+        }
+        .can{
+            background-color: green;
+        }
+        .topmenuli a:hover{    /*li nin içindeki a nın üstüne geldiğimde olacaklar.*/
+           background-color: aqua ;
+        }
+    
+        .clearfix{
+            content: "";
+            clear: both;
+            display: table;
+        }
+        .sidemenu li a{
+            display: block;
+            background-color: #eee;
+           margin-bottom: 4px;
+           padding: 8px;
+
+        }
+        .sidemenu li a:hover{
+            background-color: #555;
+            color:white ;
+           
+
+        }
+        .sidemenu{
+            width: 25%;
+            
+        }
+        .sidemenu ul{
+            margin: 0;
+           padding:0;
+           list-style-type: none;
+        }
+        .sidemenu li a{
+            display: block;
+            padding: 8px;
+            margin-bottom: 4px;
+            text-decoration: none;
+             
+        }
+        .content{
+            width: 75%;
+        }
+        .column{
+            float: left;
+            padding:15px;
+        }
+        .header{
+            background-color: aqua;
+            padding: 15px;
+            text-align: center;
+        }
+        .footer{
+            background-color: #444;
+            color: white;
+            padding: 15px;
+            
+        }
+
+
+
+    </style>
+
+
+</head>
+<body>
+    
+<ul class="topmenu">
+    <li class="can"><a href="#home">Home</a></li>
+    <li><a href="#news">News</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#about">About</a></li>
+</ul>
+
+
+
+
+<div class="clearfix">
+
+<div class="column sidemenu">
+<ul>
+    <li><a href="#flight">The Flight</a></li>
+    <li><a href="#city">The City</a></li>
+    <li><a href="#ısland">The Island</a></li>
+    <li><a href="#food">The Food</a></li>
+    <li><a href="#people">The People</a></li>
+    <li><a href="#history">The History</a></li>
+    <li><a href="#oceanas">The Oceans</a></li>
+</ul> 
+</div>  
+
+<div class="column content">
+    <div class="header">
+        <h1>The City</h1>
+    </div>
+    <h1>Chania</h1>
+    <p> voluptatem eos ipsam alias! Iure esse molestias necessitatibus veniam commodi quasi culpa corporis aut laborum dicta, reprehenderit labore doloribus aliquid consequatur natus blanditiis eaque optio numquam sequi. Laudantium, debitis!</p>
+    <p>magnam quasi pariatur quod nesciunt tempore esse temporibus quos totam? Nisi suscipit omnis nobis explicabo beatae, provident non sed optio quisquam commodi tempora fuga quod velit.</p>
+</div>
+
+</div> 
+
+
+<div class="footer" >Footer Text</div>
+
+</body>
+</html>

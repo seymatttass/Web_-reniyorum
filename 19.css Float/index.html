@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+<style>
+
+     img{
+        float: right;   /*resmi sağa alırız ve yazı solda kalır.*/
+     }
+
+
+     .div1{
+         width: 100px;
+         height: 50px;
+         border: 2px solid red;
+         float: left;
+         margin: 10px;
+         
+     }
+     .div2{
+        border: 1px solid blue;
+        clear: left;       /*div1 de float left verdiğimiz için iki div üst üste gelmişti. clear:left diyerek bunu çözmüş olduk.float:left e izin vermez yukardaki*/
+     }
+
+</style>
+
+
+</head>
+<body>
+    
+<img src="jpg1.png" alt="">
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi saepe, itaque architecto possimus omnis dolores soluta perspiciatis consequatur. Natus doloremque quam omnis reprehenderit illum dolorum nostrum beatae, eveniet maiores? Temporibus et nam aliquam. Ea sequi autem incidunt dignissimos harum modi quidem doloribus eos libero ratione, praesentium perferendis mollitia ullam quam corporis quo temporibus. Facilis quam vero assumenda, reprehenderit quas iste omnis numquam esse possimus dolorum labore quidem, laborum corporis cupiditate! Unde exercitationem rerum minus doloribus veritatis id nesciunt non placeat laborum dolorem ipsam aliquam quae, animi mollitia? Neque molestiae nemo optio sit perferendis provident at exercitationem, laborum et fugiat laudantium.</p>
+
+
+<h2>Clear kullanılmadan</h2>
+ 
+<div class="div1">div1</div>
+<div class="div2">div2</div>
+
+
+
+
+
+</body>
+</html>

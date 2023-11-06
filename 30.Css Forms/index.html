@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+    input[type=text]{      /*type text olanlara css veriiriz.*/
+        width: 100%;     /*ad girilecek alan tüm satırı kaplar.*/
+        padding: 12px 15px;
+        margin: 18px 0;
+        border: 3px solid red;
+        box-sizing: border-box;    /*ekleme olmaz genişlik neyse padding border hepsi içindedir.*/
+        border-radius: 14px ; 
+        /* background-color: darkmagenta; */
+        color:white;     /*kullanıcının girdiği yazının rengi.*/   
+        background-image: url('indir.png');
+        background-repeat: no-repeat;
+        background-position: 10px 5x;
+
+    }  
+     input[type=text]:focus       /*input alanına tıkladığımda olacak css,renk değişecek.*/
+     {
+        background-color: darkmagenta;
+     }  
+
+
+
+
+     </style>
+
+</head>
+<body>
+
+    <form>
+        <label for="can">Adınızı giriniz</label>
+        <input type="text" name="can">
+        <label for="boz">Soyadınızı giriniz</label>
+        <input type="text" name="boz">
+
+
+    </form>
+    
+
+
+
+
+
+</body>
+</html>

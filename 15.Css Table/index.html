@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+
+    <style>
+     table{
+        border-collapse:collapse;   /*table daki ikili görünümleri teke düşürdüm.*/
+         /* border-collapse: separate;     table da ikili görünümü sağlar. */    
+         width: 100% ;
+     }
+     th{
+        height: 100px;
+        text-align: left;
+        padding:15px;
+        background-color: forestgreen;
+        color:white;
+     }
+     td{
+        text-align: left;
+        height: 50px;
+        vertical-align: center;       /*yazıyı ortalar.*/
+         /* vertical-align: bottom;  tablo içerisindeki değeri alt tabana getir,çizginin hemen üstünde.*/
+        /* vertical-align: top;      üstteki çizgiye göre hizalar.*/
+        padding:15px;
+     }
+
+       
+     th,td{
+            
+            border-bottom: 1px solid black;   /*sadece altlarına çizgi ekledik..*/
+        }
+
+    
+     tr:hover{     /*üstüne gelindiğinde*/
+           background-color: darkturquoise;
+        }
+
+      tr:nth-child(even){      /*even=çift sayı,odd=tek sayı*/
+          background-color: #f2f2f2 ;     /*çiftlere renk verdik(backgroundcolor)*/
+          color:black;   
+      }   
+
+    </style>
+
+
+</head>
+<body>
+
+    
+
+    <div style="overflow-x:auto;">    <!--taşan verileri scrollbar sayesinde kaydırarak görüyor.Responsive yani başka tarayıcıdaki görüntüsünü de ayarlamış oluyoruz.-->
+        <table>
+
+
+            <tr>
+               <th>İsim</th>
+               <th>Soyisim</th>
+               <th>Soyisim</th>
+               <th>Soyisim</th>
+               <th>Soyisim</th>
+               <th>Soyisim</th>
+               <th>Soyisim</th>
+               <th>Soyisim</th>
+               <th>Soyisim</th>
+               <th>Soyisim</th>
+               <th>Soyisim</th>
+               <th>Soyisim</th>
+               <th>Soyisim</th>
+               <th>Soyisim</th>
+               <th>Soyisim</th>
+               <th>Soyisim</th>
+               <th>Soyisim</th>
+               <th>Soyisim</th>
+               <th>Soyisim</th>
+               <th>Soyisim</th>
+               <th>Soyisim</th>
+               <th>Soyisim</th>
+               <th>Soyisim</th>
+               <th>Soyisim</th>
+               <th>Soyisim</th>
+               <th>Soyisim</th>
+
+               
+            </tr>
+       
+       
+               <tr>
+                   <td>Can</td>
+                   <td>Boz</td>
+               </tr>    
+       
+       
+               <tr>
+                   <td>Şeyma</td>
+                   <td>Taş</td>
+               </tr>
+       
+               <tr>
+                   <td>Mehmet</td>
+                   <td>Eren</td>
+               </tr>
+       
+               <tr>
+                   <td>Şevval</td>
+                   <td>Taş</td>
+               </tr>
+       </table>
+       
+    </div>
+
+
+
+
+
+</body>
+</html>

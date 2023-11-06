@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+    div.gallery{
+        float: left;
+        width: 180px; 
+        margin: 5px;    /*kenarlardan boşluk*/
+        border: 1px solid rgb(236, 216, 216);
+    } 
+    div.gallery img{
+         width: 100%;     /*imageları bulundukları dive sığdırmak için.*/
+        height: auto;     /*resmin yükseklik değerini resmi bozmadan otomatik ayarlayacaktır.*/
+    }
+    div.desc{
+        padding: 15px ;
+        text-align: center;
+    }
+    div.gallery:hover{
+        border: 1px solid black;
+    }
+
+
+    </style>
+
+
+</head>
+<body>
+      
+<div class="gallery">
+    <a target="_blank" href="4.jpeg">  <!--tıklandığında resmin geniş olarak açılması için target ekledik.-->
+        <img src="4.jpeg" alt="Yeni 4" width="600" height="400">
+    </a> 
+    <div class="desc ">
+        Güzel bir resim
+    </div>     
+</div>
+  
+<div class="gallery">
+    <a target="_blank" href="4.jpeg">  <!--tıklandığında resmin geniş olarak açılması için target ekledik.-->
+        <img src="5.jpeg" alt="Yeni 5" width="600" height="400">
+    </a> 
+    <div class="desc ">
+        Güzel bir resim
+    </div>     
+</div>
+  
+<div class="gallery">
+    <a target="_blank" href="4.jpeg">  <!--tıklandığında resmin geniş olarak açılması için target ekledik.-->
+        <img src="6.jpeg" alt="Yeni 6" width="600" height="400">
+    </a> 
+    <div class="desc ">
+        Güzel bir resim
+    </div>     
+</div>
+  
+<div class="gallery">
+    <a target="_blank" href="4.jpeg">  <!--tıklandığında resmin geniş olarak açılması için target ekledik.-->
+        <img src="7.jpeg" alt="Yeni 7" width="600" height="400">
+    </a> 
+    <div class="desc ">  <!--(desc=description)-->
+        Güzel bir resim
+    </div>     
+</div>
+  
+
+
+
+</body>
+</html>
